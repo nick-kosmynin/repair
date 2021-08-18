@@ -1,0 +1,141 @@
+.header {
+    display: flex;
+    width: 1410px;
+    max-width: 100%;
+    margin: 0 auto;
+    min-height: 176px;
+    padding-top: 26px;
+    &__logo {
+        width: 377px;
+        height: 100px;
+        margin-right: 170px;
+    }
+
+    &__address {
+        padding-top: 55px;
+        width: 405px;
+        height: 50px;
+        margin-right: 96px;
+
+        p {
+            margin: 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 150%;
+            text-align: right;
+            letter-spacing: 0.045em;
+            color: #444444;
+        }
+    }
+
+    &__links {
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 150%;
+            text-decoration-line: underline;
+            color: #357CDD;
+        }
+    }
+
+    &__phone {
+        width: 265px;
+        height: 59px;
+        margin-right: 92px;
+        padding-top: 45px;
+
+        p {
+            margin: 0;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 26px;
+            line-height: 150%;
+        }
+    }
+
+    &__circle {
+        width: 6px;
+        height: 6px;
+        background: #13DB1B;
+        border-radius: 100%;
+    }
+
+    &__phone-upper {
+        display: flex;
+        width: 265px;
+        height: 39px;
+
+        img {
+            width: 15px;
+            height: 15px;
+            margin-left: 15px;
+            margin-top: 13px;
+        }
+    }
+
+    &__phone-lower {
+        display: flex;
+        width: 225px;
+        height: 20px;
+        margin-left: 18px;
+
+        p {
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 150%;
+            margin-left: 9px;
+            margin-top: -7px;
+        }
+    }
+
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #357CDD;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 60px;
+
+        span {
+            position: absolute;
+            display: block;
+            width: 12.5px;
+            height: 0.5px;
+            background: #357CDD;
+            top: 6px;
+            left: 8px;
+        }
+        span.center{
+            position: absolute;
+            display: block;
+            width: 12.5px;
+            height: 0.5px;
+            background: #357CDD;
+            top: 14px;
+            left: 8px;
+        }
+        span.low{
+            position: absolute;
+            display: block;
+            width: 12.5px;
+            height: 0.5px;
+            background: #357CDD;
+            top: 21px;
+            left: 8px;
+        }
+    }
+}
+.container{
+    width: 1410px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+@import 'services';
