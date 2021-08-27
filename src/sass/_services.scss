@@ -15,6 +15,10 @@
         margin: 0;
     }
 
+    &__block{
+        display: flex;
+    }
+
     &__accordion {
         margin-top: 34px;
     }
@@ -34,11 +38,11 @@
         line-height: 150%;
         color: #fff;
         cursor: pointer;
-
+        padding-left: 10px;
     }
 
     &__panel {
-        width: 810px;
+        width: 820px;
         height: 236px;
         background: #FFFFFF;
         border: 2px solid #418DF6;
@@ -106,13 +110,14 @@
 
     }
 
-    &__cross{
+    &__cross {
         width: 20px;
         height: 3px;
         position: relative;
         margin-right: 25px;
     }
-    &__cross::before{
+
+    &__cross::before {
         content: "";
         position: absolute;
         width: 20px;
@@ -121,7 +126,7 @@
         background: #fff;
     }
 
-    &__cross::after{
+    &__cross::after {
         content: "";
         position: absolute;
         width: 20px;
@@ -130,15 +135,16 @@
         background: #fff;
     }
 
-    .show{
-        display: block;
+    &__plus {
+        display: none;
         width: 20px;
         height: 3px;
         background: #fff;
         position: relative;
         margin-right: 25px;
     }
-    .show::before{
+
+    &__plus::before {
         content: "";
         width: 4px;
         height: 20px;
@@ -148,12 +154,82 @@
         top: -8px;
     }
 
-    .hide{
+    .hide {
         display: none;
     }
-    .showCross{
+
+    .show {
         display: block;
     }
+
+    &__form {
+        width: 450px;
+        height: 602px;
+        background: #F8F8F8;
+        box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-left: 156px;
+        margin-top: 34px;
+
+        h1 {
+            margin: 0;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 26px;
+            text-align: center;
+            padding-top: 34px;
+            padding-bottom: 20px;
+        }
+
+        p {
+            margin: 0;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 130%;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__input {
+        display: block;
+        width: 360px;
+        height: 75px;
+        background: #F0F6FB;
+        border-radius: 5px;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        border: none;
+        outline: 0;
+        padding-left: 29px;
+    }
+
+    button.btn {
+        display: block;
+        width: 360px;
+        height: 73px;
+        left: 1254px;
+        top: 706px;
+        background: linear-gradient(180deg, #418DF6 0%, #1357B6 100%);
+        box-shadow: 0px 2px 0px #1951A0, 0px 10px 30px rgba(65, 141, 246, 0.46), inset 0px -1px 0px rgba(255, 255, 255, 0.15);
+        border-radius: 5px;
+        margin: 0 auto;
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+    &__info-tablet{
+        display: flex;
+        width: 360px;
+        margin: 0 auto;
+        margin-top: 105px;
+       
+    }
+    &__image{
+        margin-right: 25px;
+    }
+
 
 
 
